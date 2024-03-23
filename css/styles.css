@@ -1,0 +1,232 @@
+/**
+ * Body
+ */
+body {
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/**
+ * Headers
+ */
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.header-container {
+    width: 100%;
+    height: 150px;
+    border-radius: 0.5rem;
+    background-image: url('../public/logos/mg-logo-2-3x.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: background-image 3s ease-in;
+}
+
+.header-container:hover {
+    background-color: black;
+    background-image: url('../public/logos/mg-logo-4-3x.png');
+    transition: background-image 3s ease-out;
+}
+
+/**
+ * Navigation Menu
+ */
+nav {
+    border-top: 1px solid lightslategray;
+    border-bottom: 1px solid lightslategray;
+}
+
+nav ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    list-style: none;
+    text-align: center;    
+}
+
+nav li {
+    padding: 1rem 2rem 1.15rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: lightslategray;
+    font-size: large;
+    margin: auto;
+
+    a {
+      position: relative;
+      display: block;
+      color: black;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: 0.5s;
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: lightslategray;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s;
+      }
+
+      &:hover {
+        color: grey;
+      }
+
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+    }
+}
+
+/**
+ * Main Section
+ */
+section {
+    display: flex;
+}
+
+article {
+    flex: 1;
+}
+
+/**
+ * Main Section - Home Banner
+ */
+.home-banner-image img {
+    border-radius: 0.5rem;
+    width: 100%;
+    height: auto;
+}
+
+.home-banner-text {
+    position: absolute;
+    top: 25rem;
+    background-color: none;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1% 2%;
+}
+
+/**
+ * Main Section - Home Items
+ */
+.home-items {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.home-items-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    gap: 20px;
+
+    > div {
+        flex: 0 0 200px;
+        border-radius: 0.5rem;
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+        box-shadow: 2px 5px 15px lightslategray;
+        position: relative;
+        overflow: hidden;
+    
+        &:nth-of-type(1) {
+          background: url("../public/images/sabrianna-9_35SjwzpnU-unsplash.jpg")
+            no-repeat 50% / cover;
+        }
+        &:nth-of-type(2) {
+          background: url("../public/images/sabrianna-Y_bxfTa_iUA-unsplash.jpg")
+            no-repeat 50% / cover;
+        }
+        &:nth-of-type(3) {
+          background: url("../public/images/sama-hosseini-pWVNg9B9NLI-unsplash.jpg")
+            no-repeat 50% / cover;
+        }
+
+        .home-item-content {
+            font-size: 1.5rem;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 25px;
+            opacity: 0;
+            flex-direction: column;
+            height: 100%;
+            justify-content: flex-end;
+            transform: translatey(100%);
+            transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+            visibility: hidden;
+
+            span {
+                align-content: center;
+                display: block;
+                font-size: 0.8rem;
+                margin-bottom: 25%;
+            }
+        }
+        
+        &:hover {
+            flex: 0 0 250px;
+            box-shadow: 1px 3px 15px lightslategray;
+            transform: translatey(-20px);
+        }
+        
+        &:hover .home-item-content {
+            opacity: 1;
+            transform: translatey(0%);
+            visibility: visible;
+        }
+    }
+}
+
+/**
+ * Footer Section
+ */
+footer {
+    top: 3rem;
+    bottom: 3rem;
+    display: flex;
+    background-color: black;
+}
+
+footer div {
+    flex: 1;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+footer div p {
+    color: whitesmoke;
+    text-align: right;
+}
+
+.footer-logo {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer-logo img {
+    width: 20%;
+    height: auto;
+}
