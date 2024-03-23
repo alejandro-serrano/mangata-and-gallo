@@ -23,3 +23,5 @@ Photo by <a href="https://unsplash.com/@samahosseini?utm_content=creditCopyText&
 
 # Author
 <a href="https://mx.linkedin.com/in/alejandro-serrano">Alejandro Serrano</a>
+
+<a href="https://coursera.org/share/7f761f5e4dc724d004b287dd5dae92b5">HTML and CSS in depth Course Certificate</a>
