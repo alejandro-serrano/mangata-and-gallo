@@ -20,3 +20,6 @@ Photo by <a href="https://unsplash.com/@sabrinnaringquist?utm_content=creditCopy
 
 * Gold chain necklace on black textile.
 Photo by <a href="https://unsplash.com/@samahosseini?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Sama Hosseini</a> on <a href="https://unsplash.com/photos/gold-chain-necklace-on-black-textile-pWVNg9B9NLI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+# Author
+<a href="https://mx.linkedin.com/in/alejandro-serrano">Alejandro Serrano</a>
